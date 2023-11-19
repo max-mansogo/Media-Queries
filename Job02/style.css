@@ -1,0 +1,25 @@
+body {
+    background-color: #88c1d0;
+}
+ 
+/* Rango de resolución: 1680px - 1920px */
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    body {
+      background-color: #ffca4b;
+    }
+  }
+  
+  /* Rango de resolución: 1280px - 1680px */
+  @media screen and (min-width: 1280px) and (max-width: 1680px) {
+    body {
+      background-color: #275fa0;
+    }
+  }
+  
+  /* Rango de resolución: inferior a 1280px */
+  @media screen and (max-width: 1280px) {
+    body {
+      background-color: #ffffff;
+    }
+  }
+  

@@ -1,0 +1,118 @@
+/*job 4*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hamburger-checkbox {
+    display: none;
+}
+
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-top: -5px;
+}
+
+@media (max-width: 767px) {
+    #hamburger-icon {
+        display: block;
+    }
+
+    #hamburger-checkbox:checked + label + ul {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+        text-align: left;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+    }
+
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/*job de 1 a 3*/
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+section {
+    background-color: #88c1d0;
+    flex: 1;
+    max-height: 100%;
+}
+
+.column-container {
+    display: flex;
+}
+  
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+ 
+.division {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    section {
+        width: 25%;
+    }
+}
